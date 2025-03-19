@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Figtree", sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 384px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--Gray-950);
+  box-shadow: 8px 8px black;
+  gap: 24px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.perfil p {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.perfil img {
+  width: 32px;
+}
+
+.content{
+  color: var(--Gray-950);
+  font-size: 1.4rem;
+}
+
+.content .status{
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--Yellow);
+  font-weight: 800;
+  padding: 4px 12px ;
+  border-radius: 4px;
+}
+
+.content h1{
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.content h1:hover{
+  color: var(--Yellow);
+}
+
+.content .description{
+  font-size: 1.6rem;
+  color: var(--Gray-500);
+}
